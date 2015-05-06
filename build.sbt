@@ -26,4 +26,4 @@ bintray.Keys.bintrayOrganization in bintray.Keys.bintray := Some("restfulscala")
 
 bintray.Keys.packageLabels in bintray.Keys.bintray := Seq("scala", "rest", "play")
 
-    
+licenses := Seq("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0"))

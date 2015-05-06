@@ -1,6 +1,6 @@
-name := "play-hal"
+name := "halselhof"
 
-organization := "net.atinu"
+organization := "org.restfulscala"
 
 version := "0.1.0"
 

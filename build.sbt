@@ -2,7 +2,7 @@ name := "halselhof"
 
 organization := "org.restfulscala"
 
-version := "0.1.0"
+version := "0.2.0"
 
 scalaVersion := "2.11.5"
 
@@ -14,11 +14,11 @@ resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 
 scalariformSettings
 
-libraryDependencies += "com.typesafe.play" %% "play-json" % "2.3.7" % "provided"
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.4.4" % "provided"
 
-libraryDependencies += "com.typesafe.play" %% "play" % "2.3.7" % "provided"
+libraryDependencies += "com.typesafe.play" %% "play" % "2.4.4" % "provided"
 
-libraryDependencies += "org.scalatestplus" %% "play" % "1.1.0" % "test"
+libraryDependencies += "org.scalatestplus" %% "play" % "1.4.0-M4" % "test"
 
 bintray.Plugin.bintraySettings
 

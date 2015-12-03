@@ -3,6 +3,7 @@ package play.api.mvc
 import play.api.hal._
 import play.api.http.Writeable
 import play.api.libs.json.Json
+import scala.concurrent.ExecutionContext.Implicits.global
 
 package object hal {
 

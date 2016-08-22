@@ -4,9 +4,7 @@ organization := "org.restfulscala"
 
 version := "0.1.1"
 
-scalaVersion := "2.11.5"
-
-crossScalaVersions := Seq("2.11.6", "2.10.5")
+scalaVersion := "2.11.8"
 
 scalacOptions  ++= Seq("-unchecked", "-deprecation", "-feature")
 

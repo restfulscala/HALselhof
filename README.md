@@ -55,3 +55,7 @@ def halOrJson = Action { implicit request =>
 
 - 0.2.0: Update to Play 2.5, dropping support for Scala 2.10
 - 0.1.0: First release of the library
+
+## Contributors
+
+Tobias Neef, Mike Mazur, Daniel Westheide

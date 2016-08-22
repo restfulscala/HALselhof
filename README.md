@@ -10,7 +10,7 @@ To use this library, add the following settings to your build definition:
 ```
 resolvers += "restful-scala" at "https://dl.bintray.com/restfulscala/maven"
 
-libraryDependencies += "org.restfulscala" %% "halselhof" % "0.1.1"
+libraryDependencies += "org.restfulscala" %% "halselhof" % "0.2.0"
 
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.5.4"
 ```

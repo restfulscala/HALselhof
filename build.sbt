@@ -18,7 +18,7 @@ libraryDependencies += "com.typesafe.play" %% "play-json" % "2.5.4" % "provided"
 
 libraryDependencies += "com.typesafe.play" %% "play" % "2.5.4" % "provided"
 
-libraryDependencies += "org.scalatestplus" %% "play" % "1.1.0" % "test"
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % "test"
 
 bintray.Plugin.bintraySettings
 

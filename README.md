@@ -1,5 +1,5 @@
 # HALselhof
-A [HAL](http://tools.ietf.org/html/draft-kelly-json-hal) library based on [Play-JSON](https://www.playframework.com/documentation/2.5.x/ScalaJson).
+A [HAL](http://tools.ietf.org/html/draft-kelly-json-hal) library based on [Play-JSON](https://www.playframework.com/documentation/2.6.x/ScalaJson).
 
 [![Build Status](https://travis-ci.org/restfulscala/HALselhof.svg?branch=master)](https://travis-ci.org/restfulscala/HALselhof)
 
@@ -12,7 +12,7 @@ resolvers += "restful-scala" at "https://dl.bintray.com/restfulscala/maven"
 
 libraryDependencies += "org.restfulscala" %% "halselhof" % "0.2.0"
 
-libraryDependencies += "com.typesafe.play" %% "play-json" % "2.5.4"
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.3"
 ```
 
 You need to add the `play-json` dependency explicitly, as _HALselhof_ assumed it is being provided by your application. If you use this library with the Play framework, _play-json_ should already be on your classpath.

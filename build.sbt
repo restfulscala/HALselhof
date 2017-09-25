@@ -4,7 +4,7 @@ organization := "org.restfulscala"
 
 version := "0.2.0"
 
-scalaVersion := "2.11.8"
+crossScalaVersions := Seq("2.11.8", "2.12.3")
 
 scalacOptions  ++= Seq("-unchecked", "-deprecation", "-feature")
 
@@ -12,11 +12,11 @@ resolvers += "typesafe repo" at "http://repo.typesafe.com/typesafe/releases/"
 
 scalariformSettings
 
-libraryDependencies += "com.typesafe.play" %% "play-json" % "2.5.4" % "provided"
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.3" % "provided"
 
-libraryDependencies += "com.typesafe.play" %% "play" % "2.5.4" % "provided"
+libraryDependencies += "com.typesafe.play" %% "play" % "2.6.3" % "provided"
 
-libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % "test"
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.1" % "test"
 
 bintray.Plugin.bintraySettings
 

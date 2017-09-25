@@ -58,4 +58,4 @@ def halOrJson = Action { implicit request =>
 
 ## Contributors
 
-Tobias Neef, Mike Mazur, Daniel Westheide
+Tobias Neef, Mike Mazur, Daniel Westheide, Aristotelis Dossas

@@ -10,7 +10,7 @@ To use this library, add the following settings to your build definition:
 ```
 resolvers += "restful-scala" at "https://dl.bintray.com/restfulscala/maven"
 
-libraryDependencies += "org.restfulscala" %% "halselhof" % "0.2.0"
+libraryDependencies += "org.restfulscala" %% "halselhof" % "0.3.0"
 
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.3"
 ```
@@ -53,6 +53,7 @@ def halOrJson = Action { implicit request =>
 
 ## Release Notes
 
+- 0.3.0: Update to Play 2.6, cross-building for Scala 2.11 and 2.12
 - 0.2.0: Update to Play 2.5, dropping support for Scala 2.10
 - 0.1.0: First release of the library
 

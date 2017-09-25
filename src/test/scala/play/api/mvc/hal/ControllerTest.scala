@@ -3,14 +3,14 @@ package play.api.mvc.hal
 import org.scalatest.{ FunSuite, Matchers }
 import play.api.http.{ HeaderNames, Status }
 import play.api.libs.json.Json
-import play.api.mvc.{ Controller, Result }
+import play.api.mvc._
 import play.api.test.{ DefaultAwaitTimeout, FakeRequest, ResultExtractors }
 
 import scala.concurrent.Future
 
 class ControllerTest extends FunSuite with Matchers with ResultExtractors with HeaderNames with Status with DefaultAwaitTimeout {
 
-  class TestController() extends Controller with HalWriteController
+  class TestController() extends HalWriteController with Results with Rendering with AcceptExtractors
 
   test("A HAL Resource should be writeable") {
     val controller = new TestController()

@@ -29,9 +29,9 @@ package object hal {
   }
 
   case class HalLink(rel: String, href: String,
-      deprecation: Option[String] = None, name: Option[String] = None, profile: Option[String] = None,
-      title: Option[String] = None, hreflang: Option[String] = None, `type`: Option[String] = None,
-      linkAttr: JsObject = Defaults.emptyJson, templated: Boolean = false) {
+    deprecation: Option[String] = None, name: Option[String] = None, profile: Option[String] = None,
+    title: Option[String] = None, hreflang: Option[String] = None, `type`: Option[String] = None,
+    linkAttr: JsObject = Defaults.emptyJson, templated: Boolean = false) {
 
     def withLinkAttributes(obj: JsObject) = this.copy(linkAttr = obj)
     def withDeprecation(url: String) = this.copy(deprecation = Some(url))

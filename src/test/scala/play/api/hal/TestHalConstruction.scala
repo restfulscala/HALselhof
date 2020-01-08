@@ -136,8 +136,7 @@ class TestHalConstruction extends FunSuite with Matchers {
         data.asResource include
           HalLink("self", "/orders") include
           HalLink("next", "/orders?page=2") include
-          HalLink("find", "/orders{?id}", templated = true)
-      )
+          HalLink("find", "/orders{?id}", templated = true))
   }
 
   test("provide support for optional link attributes") {
@@ -152,33 +151,28 @@ class TestHalConstruction extends FunSuite with Matchers {
                "next": { "href": "/orders?page=2", "type": "application/json" },
                "find": { "href": "/orders{?id}", "templated": true, "hreflang": "de" }
              }
-        }""".stripMargin)
-      )
+        }""".stripMargin))
   }
 
   test("provide support for arbitrary link attributes") {
     Hal.links(
-      HalLink("self", "/orders").withLinkAttributes(Json.obj("isRequired" -> true))
-    ).json should equal(
+      HalLink("self", "/orders").withLinkAttributes(Json.obj("isRequired" -> true))).json should equal(
 
         Json.parse("""{
         "_links": {
                "self": { "href": "/orders", "isRequired": true }
              }
-        }""".stripMargin)
-      )
+        }""".stripMargin))
   }
 
   test("provide support for arbitrary link attributes (from seq)") {
     Hal.linksSeq(
-      HalLink("self", "/orders").withLinkAttributes(Json.obj("isRequired" -> true)) :: Nil
-    ).json should equal(
+      HalLink("self", "/orders").withLinkAttributes(Json.obj("isRequired" -> true)) :: Nil).json should equal(
 
         Json.parse("""{
         "_links": {
                "self": { "href": "/orders", "isRequired": true }
              }
-        }""".stripMargin)
-      )
+        }""".stripMargin))
   }
 }
